@@ -1,0 +1,62 @@
+@import 'node_modules/bootstrap/scss/_variables';
+@import 'node_modules/bootstrap/scss/_mixins';
+
+/*p {
+	@include size (16%, 300px)
+}*/
+
+.main-nav {
+	background-color: #2b8e71;
+	text-align: center;
+	color: white;
+	padding: 1px;
+	border-radius: 5px;
+	div {
+		padding: 0;
+		a {
+			color: white;
+			display: block;
+			padding: .5rem 1rem;
+		}
+		&.active {
+			background-color: #1b755b;
+		}
+		&:hover {
+			background-color: #5cc1a4;	
+		}
+	}
+}
+
+.hide-sm {
+	@include media-breakpoint-only(md) {
+		display: none;
+	} 
+}
+
+body { 
+    background-image: url('../img/back.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.logo {
+	width: 26%;
+	padding: 1em 0em;
+}
+
+.jumbotron.main-view {
+	background-color: rgba(236,238,239,0.8);
+	margin-top: 25px
+}
+
+#fb-logo{
+	width: 238px;
+}
+
+#fb-hold {
+    margin-top: 100px;
+	@include media-breakpoint-down(md) {
+		margin-top: 30px;
+	} 
+}
