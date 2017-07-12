@@ -10,11 +10,14 @@
 }
 .main-nav div {
   padding: 0;
+  display: table;
+  height: 64px;
 }
 .main-nav div a {
   color: white;
-  display: block;
+  display: table-cell;
   padding: .5rem 1rem;
+  vertical-align: middle;
 }
 .main-nav div.active {
   background-color: #1b755b;
@@ -53,10 +56,31 @@ body {
 #fb-hold {
   margin-top: 100px;
 }
-@media (max-width: 991px) {
+
+@media (max-width: 768px) {
+  .col-sm-12 {
+      float: left;
+      width: 100%;
+  }
+}
+@media (max-width: 992px) {
   #fb-hold {
     margin-top: 30px;
   }
 }
+
+@media (min-width: 768px) {
+  .col-md-2 {
+      float: left;
+      width: 13.66%;
+  }
+
+@media (min-width: 992px) {
+  .col-md-2 {
+      float: left;
+      width: 14.28%;
+  }
+
+
 
 /*# sourceMappingURL=main.css.map */

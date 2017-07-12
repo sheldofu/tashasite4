@@ -35,6 +35,11 @@ var tashaSite = angular
         tab: 'wellbeing',
         controller: 'TashaController'
       })
+      .when('/wellnesscoaching', {
+        templateUrl: 'views/wellnesscoaching.html',
+        tab: 'wellnesscoaching',
+        controller: 'TashaController'
+      })
       .when('/psychology', {
         templateUrl: 'views/psychology.html',
         tab: 'psychology',
